@@ -1,8 +1,7 @@
-//
-// Created by User on 4/20/2019.
-//
-
 #include "Block.h"
+#include <sstream>
+#include <string>
+#include<iostream>
 #include "sha256.h"
 Block::Block(uint32_t nIndexIn, const string &sDataIn) : _nIndex(nIndexIn), _sData(sDataIn) {
     _nNonce = -1;
